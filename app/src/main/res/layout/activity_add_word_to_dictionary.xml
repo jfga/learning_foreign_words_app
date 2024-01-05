@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activities.AddWordToDictionaryActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/bright_bone">
+
+    <EditText
+        android:id="@+id/edit_text_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Word"
+        android:drawableStart="@drawable/custom_text_ic"
+        android:drawablePadding="8dp"
+        android:background="@drawable/custom_input"
+        android:inputType="text"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/language_english_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="English"
+            android:textSize="10dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/custom_invisible_button"
+            />
+
+        <Button
+            android:id="@+id/language_ukrainian_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Ukrainian"
+            android:textSize="10dp"
+            android:layout_toRightOf="@id/language_english_button"
+            android:background="@drawable/custom_invisible_button"/>
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/edit_text_translation"
+        android:drawableStart="@drawable/custom_translate_ic"
+        android:drawablePadding="8dp"
+        android:background="@drawable/custom_input"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Translation"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_definition"
+        android:drawableStart="@drawable/custom_book_ic"
+        android:drawablePadding="8dp"
+        android:background="@drawable/custom_input"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Definition"
+        android:inputType="textImeMultiLine" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_input"
+        >
+
+        <TextView
+            android:id="@+id/text_select_part_of_speach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:text="Part of speach:"
+            android:textSize="20dp"
+            />
+
+        <NumberPicker
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:id="@+id/number_piker_part_of_speach"
+            android:layout_toRightOf="@id/text_select_part_of_speach"
+            android:theme="@style/NumberPickerText"
+            android:layout_marginRight="20dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/button_get_translation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:text="Get \n translation" />
+
+        <Button
+            android:id="@+id/button_get_definition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get \ndefinition"
+            android:layout_toRightOf="@id/button_get_translation"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_input"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pronunciation"
+            android:id="@+id/play_pronunciation_text_view"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/audio_mode_play_pronunciation_button"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/play_pronunciation_text_view"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@drawable/ic_play"
+            android:background="@drawable/custom_play_pronunciation_btn"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

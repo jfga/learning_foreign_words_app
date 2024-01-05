@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainModeLearningActivity"
+
+    android:background="@color/bright_bone">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/audio_mode_name_text"
+        android:text="Audio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/audio_mode_score"
+        android:layout_below="@id/audio_mode_name_text"
+        android:background="@drawable/custom_score_background"
+        android:text="score: "
+
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"
+        android:textSize="20dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_audio_mode_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/audio_mode_name_text"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/custom_input">
+
+        <TextView
+            android:id="@+id/audio_mode_play_again_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Play again"
+            android:textSize="30dp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/audio_mode_play_pronunciation_button"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/audio_mode_play_again_text"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@drawable/ic_play"
+            android:background="@drawable/custom_play_pronunciation_btn"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:id="@+id/relative_layout_main_mode_buttons">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_main_mode_first_answer"
+            android:text="First answer"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_main_mode_second_answer"
+            android:text="Second answer"
+            android:layout_below="@id/button_main_mode_first_answer"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_main_mode_third_answer"
+            android:text="Third answer"
+            android:layout_below="@id/button_main_mode_second_answer"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_main_mode_fourth_answer"
+            android:text="Fourth answer"
+            android:layout_below="@id/button_main_mode_third_answer"
+            android:layout_marginHorizontal="20dp"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_main_mode_start"
+        android:text="Start"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/relative_layout_main_mode_buttons"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        />
+
+</RelativeLayout>
